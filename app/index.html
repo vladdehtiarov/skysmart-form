@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skysmar</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/main.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo header-logo"><img src="../images/logo.svg" alt="skysmart"></a>
+                <a href="#" class="header-btn">Подробнее о проекте</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            
+
+            <section class="content">
+                <section class="content__left">
+                    <div class="text-wrapp">
+                        <h1 class="title">Заполните и отправьте анкету до<br> 6 сентября</h1>
+                        <p class="subtitle">
+                            Мы подведем итоги 4 октября<br> и свяжемся с победителями.
+                            Все поля обязательные для заполнения.  
+                        </p>
+                    </div>
+                    <div class="link-wrapp">
+                        <a href="#">Чек-лист к творческой работе →</a>
+                        <a href="#">Технические требования к оформлению →</a>
+                    </div>
+                </section>
+                <section class="content__right">
+                    <form action="#" class="form">
+                        <input type="text" name="fullName" id="fullName" class="input-text input" placeholder="Имя и фамилия участника">
+                        <!-- Select must bee here -->
+                        <input type="text" name="parentName" id="parentName" class="input-text input" placeholder="Возраст">
+                        <!-- Select on top -->
+                        <input type="text" name="parentName" id="parentName" class="input-text input" placeholder="Имя родителя">
+                        <input type="text" name="parentMail" id="parentMail" class="input-text input" placeholder="Почта родителя">
+                        <div class="textarea">
+                            <div class="char" id="superPowerChar">0/200</div>
+                            <textarea name="superPower" id="superPower" class="input text-area" cols="30" rows="10" placeholder="Вопрос для участника: как ты думаешь, какая у тебя суперсила? Что у тебя хорошо получается в школе, в дополнительных занятиях или в общении с друзьями и семьей?"></textarea>
+                        </div>
+                        <div class="textarea">
+                            <div class="char" id="whatStoppingChar">0/200</div>
+                            <textarea name="whatStopping" id="whatStopping" class="input text-area" cols="30" rows="10" placeholder="Вопрос для участника: что у тебя пока не очень хорошо получается, что мешает тебе достичь желаемого?"></textarea>
+                        </div>
+                        <div class="textarea">
+                            <div class="char" id="favorLessChar">0/200</div>
+                            <textarea name="favorLess" id="favorLess" class="input text-area" cols="30" rows="10" placeholder="Вопрос для участника: какие твои любимые школьные предметы, дополнительные занятия и активности, хобби?"></textarea>
+                        </div>
+
+                        <div class="uppload">
+                            <div class="uppload-menu">
+                                <div class="menu-item" id="upp-video">Видео</div>
+                                <div class="menu-item" id="upp-image">Рисунок</div>
+                                <div class="menu-item active-upp" id="upp-story">Рассказ</div>
+                            </div>
+                            <div class="text-wrapp" id=uppVideoWrapp style="display: none;">
+                                <div class="text-wrapp-inner">
+                                    <textarea name="uppVideo" id="uppVideoArea" class="input texptaera-upp" cols="30" rows="10" placeholder="Вставьте ссылку на творческое видео-задание (не забудьте о правилах оформления)"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="text-wrapp" id=uppImageWrapp style="display: none;">
+                                <div class="text-wrapp-inner">
+                                    <div class="textara-char" id="uppImg">
+                                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2C7.34315 2 6 3.34315 6 5V13C6 13.5523 6.44772 14 7 14C7.55228 14 8 13.5523 8 13V6H10V13C10 14.6569 8.65685 16 7 16C5.34315 16 4 14.6569 4 13V5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5V13C14 16.866 10.866 20 7 20C3.13401 20 0 16.866 0 13V6H2V13C2 15.7614 4.23858 18 7 18C9.76142 18 12 15.7614 12 13V5C12 3.34315 10.6569 2 9 2Z" fill="black" fill-opacity="0.24"/>
+                                        </svg>
+                                    </div>
+                                    <textarea name="uppImage" id="uppImageArea" class="input texptaera-upp" cols="30" rows="10" placeholder="Прикрепи файл в формате .jpeg"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="text-wrapp" id=uppStoryWrapp>
+                                <div class="text-wrapp-inner">
+                                    <div class="textara-char" id="uppStory">0/2500</div>
+                                    <textarea name="uppImage" id="uppStoryArea" class="input texptaera-upp" cols="30" rows="10" placeholder="Вставьте свой рассказ текстом"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="text" name="linkPost" id="linkPost" class="input-text input" placeholder="Ссылка на пост в соцсетях">
+                        
+                        <div class="ch-btn-group">
+                            <div class="checkbox-wrapp">
+                                <label>
+                                    <input type="checkbox" name="persomalData" id="persomalData">
+                                    <div class="cb-text">
+                                        Принимая участие в конкурсе я даю согласие на обработку 
+                                        персональных данных 
+                                        <a href="#">политике обработки персональных данных</a>
+                                    </div>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="rules" id="rules">
+                                    <div class="cb-text">
+                                        Я ознакомился(-лась) и полностью принимаю
+                                        <a href="#">Правила проведения конкурса «Гранты Skysmart»</a>
+                                    </div>
+                                </label>
+                            </div>
+                                
+                            <button type="submit" id="send-form">Отправить анкету</button>
+                        </div>       
+                    </form>
+                </section>
+            </section>
+            
+            <footer class="footer">
+                <div class="footer__inner">
+                    <div class="footer__inner-left">
+                        <img src="../images/spok.svg" alt="spoke">
+                        <span class="footer-text">Делаем развитие привлекательным</span>
+                    </div>
+                    <div class="footer_inner-right">
+                        <span class="footer-text">© Skysmart, 2021</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    
+    
+</body>
+</html>

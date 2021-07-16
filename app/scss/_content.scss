@@ -1,0 +1,87 @@
+@import "form";
+
+.content {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @include responsive(mobile) {
+        display: block;
+        margin-top: 32px;
+    }
+
+    &__right {
+        width: 540px;
+        margin-top: 16px;
+
+        @include responsive(mobile) {
+            width: 100%;
+            margin-top: 43px;
+        }
+    }
+
+    &__left {
+        height: 460px;
+        position: sticky;
+        top: 0;
+        left: 0;
+
+        @include responsive(mobile) {
+            height: 100%;
+            position: static;
+        }
+    }
+
+    .title {
+        width: 442px;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 95%;
+        letter-spacing: -1.90204px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @include responsive(mobile) {
+            width: 88%;
+            font-size: 48px;
+            line-height: 100%;
+        }
+    }
+
+    .subtitle {
+        width: 435px;
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 130%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @include responsive(mobile) {
+            width: 100%;
+            margin-top: 24px;
+            font-size: 16px;
+        }
+    }
+
+    .link-wrapp {
+        margin-top: 104px;
+
+        @include responsive(mobile) {
+            display: none;
+        }
+        
+        a {
+            display: inline-block;
+            padding-bottom: 3px;
+            font-size: 24px;
+            line-height: 110%;
+            letter-spacing: -1px;
+            text-decoration-line: underline;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #A93EDC;
+
+            &:last-child {
+                margin-top: 16px;
+            }
+        }
+    }
+}

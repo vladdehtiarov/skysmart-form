@@ -1,0 +1,122 @@
+.less {
+  width: 100%;
+  margin-top: 86px;
+
+  &-title {
+    width: 100%;
+    max-width: 1160px;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 110%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #631389;
+  }
+
+  &-card {
+    width: 260px;
+    height: auto;
+    margin-top: 32px;
+    padding: 24px 24px 32px 24px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  &-card:first-child {
+    margin-top: 0;
+  }
+
+  &-title {
+    width: 100%;
+    position: relative;
+
+    p {
+      font-size: 32px;
+      line-height: 110%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #04121B;
+    }
+
+    img {
+      width: 48px;
+      position: absolute;
+    }
+
+  }
+
+  &-yeras {
+    font-size: 32px;
+    line-height: 110%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #999999;
+  }
+
+  &-text {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #04121B;
+  }
+}
+
+.less__inner {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &-left {
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-left_l {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#long-year-line {
+  width: 105%;
+}
+
+.less-tags {
+  margin-top: 100px;
+  padding: 40px 32px 63px 32px;
+  background-color: #fff;
+  width: 440px;
+  border-radius: 16px;
+  position: relative;
+
+  &__title {
+    font-size: 48px;
+    line-height: 110%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #04121B;
+  }
+
+  &__list {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 130%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #04121B;
+  }
+
+  &__list-item {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-start;
+
+    p:first-child {
+      margin-right: 8px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@import "stickers";

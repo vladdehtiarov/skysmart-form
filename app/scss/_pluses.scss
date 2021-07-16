@@ -1,0 +1,115 @@
+.pluses {
+  width: 100%;
+  margin-top: 102px;
+
+  &-title {
+    width: 800px;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 110%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+  }
+
+  &__inner {
+    width: 100%;
+    margin-top: 57px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__int-platform {
+    width: 660px;
+    height: 550px;
+    padding: 32px;
+    padding-bottom: 0;
+    background-color: #fff;
+    border-radius: 16px;
+    color: #000;
+    position: relative;
+
+    h3 {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 38px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    p {
+      width: 545px;
+      margin-top: 12px;
+      font-size: 18px;
+      line-height: 130%;
+      letter-spacing: -0.1px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+
+  }
+
+  #our_pluses-img {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__inner-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+
+  &__card_first {
+    width: 360px;
+    height: 188px;
+    margin-top: -66px;
+    padding: 25px;
+    border: 10px solid #FFFFFF;
+    border-radius: 16px;
+    transform: rotate(-5deg);
+    position: relative;
+
+    p {
+       font-size: 24px;
+       line-height: 130%;
+       font-feature-settings: 'pnum' on, 'lnum' on;
+       color: #FFFFFF;
+     }
+  }
+
+  #heat-img {
+    position: absolute;
+    left: 186px;
+    bottom: -84px;
+  }
+
+  &__card {
+    width: 360px;
+    height: 178px;
+    margin-top: 24px;
+    padding: 24px;
+    padding-bottom: 32px;
+    border-radius: 16px;
+    background-color: #fff;
+    color: #04121B;
+
+    h4 {
+      font-size: 32px;
+      line-height: 110%;
+      font-weight: 400;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    p {
+      margin-top: 16px;
+      font-size: 18px;
+      line-height: 130%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+  }
+
+  &__card:nth-child(2) {
+    margin-top: 57px;
+  }
+}
