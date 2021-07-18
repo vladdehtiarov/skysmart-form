@@ -55,17 +55,47 @@ h1.title {
     line-height: 95%;
     letter-spacing: -1.90204px;
     font-feature-settings: 'pnum' on, 'lnum' on;
+
+    @include responsive(mobile) {
+        font-size: 40px;
+        line-height: 100%;
+    }
 }
 
 p.subtitle {
     font-size: 24px;
     line-height: 140%;
     font-feature-settings: 'pnum' on, 'lnum' on;
+
+    @include  responsive(mobile) {
+        font-size: 16px;
+        line-height: 130%;
+    }
+
     a {
         font-size: 24px;
         line-height: 140%;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: #fff;
         text-decoration-line: underline;
+
+        @include responsive(mobile) {
+            font-size: 16px;
+            line-height: 130%;
+        }
+    }
+}
+
+.br-m {
+    display: none;
+    @include responsive(mobile) {
+        display: block;
+    }
+}
+
+.br-d {
+    display: block;
+    @include responsive(mobile) {
+        display: none;
     }
 }

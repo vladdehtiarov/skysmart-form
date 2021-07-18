@@ -1,0 +1,148 @@
+.free {
+  width: 100%;
+  margin-top: 193px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @include responsive(mobile) {
+    margin-top: 56px;
+    flex-direction: column;
+  }
+
+  &-left {
+    position: relative;
+  }
+
+  &-right {
+    margin-top: 6px;
+    margin-left: 260px;
+
+    @include responsive(mobile) {
+      margin-top: 168px;
+      margin-left: 0;
+    }
+  }
+
+  &-title {
+    width: 400px;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 110%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    @include responsive(mobile) {
+      width: 100%;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: -1.90204px;
+    }
+  }
+
+  #pose-img {
+    position: absolute;
+    left: 252px;
+    bottom: -58px;
+
+    @include responsive(mobile) {
+      position: absolute;
+      left: -16px;
+      bottom: -249px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &-inp {
+      width: 340px;
+      height: 48px;
+      margin-top: 8px;
+      padding: 12px 10px;
+      background: #FFFFFF;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-family: $global-font;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: rgba(0, 0, 0, 0.5);
+
+      @include responsive(mobile) {
+        width: 100%;
+        max-width: 340px;
+        padding: 12px 16px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &-inp::placeholder {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: -0.05px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: rgba(0, 0, 0, 0.24);
+
+      @include responsive(mobile) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &-inp:first-child {
+      margin-top: 0;
+    }
+
+    &-sub {
+      width: 340px;
+      height: 48px;
+      margin-top: 8px;
+      background: #FB8023;
+      border-radius: 8px;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: -0.05px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #FFFFFF;
+      border: none;
+      outline: none;
+
+      @include responsive(mobile) {
+        width: 100%;
+        max-width: 340px;
+        height: 60px;
+        margin-top: 8px;
+        font-size: 18px;
+        line-height: 34px;
+        letter-spacing: -0.05px;
+        font-feature-settings: 'pnum' on, 'lnum' on, 'case' on, 'liga' off;
+      }
+    }
+
+    &-terms {
+      margin-top: 16px;
+      font-size: 12px;
+      line-height: 120%;
+      text-align: center;
+      letter-spacing: -0.05px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #FFFFFF;
+    }
+
+    &-link {
+      display: block;
+      font-size: 12px;
+      line-height: 120%;
+      text-align: center;
+      letter-spacing: -0.05px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #FFFFFF;
+      text-decoration-line: underline;
+    }
+  }
+}

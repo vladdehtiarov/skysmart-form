@@ -58,3 +58,11 @@
         }
     }
 }
+
+#next-step {
+    .footer {
+        @include responsive(mobile) {
+            margin-top: 56px;
+        }
+    }
+}

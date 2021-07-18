@@ -1,12 +1,26 @@
 .first-screen {
   margin-top: 40px;
 
+  @include responsive(mobile) {
+    margin-top: 32px;
+  }
+
   .title {
     width: 900px;
+
+    @include  responsive(mobile) {
+      width: 105%;
+    }
   }
 
   .subtitle {
     width: 574px;
     margin-top: 40px;
+
+    @include responsive(mobile) {
+      width: 92%;
+      margin-top: 24px;
+      line-height: 132%;
+    }
   }
 }

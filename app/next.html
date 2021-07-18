@@ -22,12 +22,14 @@
             <section class="first-screen">
                 <div class="text-wprapp">
                     <h1 class="title">
-                        Ваша заявка на гранты принята. В случае победы мы свяжемся<br> с вами 4 октября
+                        Ваша заявка на гранты принята. В случае победы мы свяжемся<br class="br-d"> с вами 4 октября
                     </h1>
                     <p class="subtitle">
                         Все подробности об этапах проекта и прочие детали можно прочитать в
                         <a href="#">подробных правилах.</a>
-                        А пока познакомьтесь с онлайн-школой Skysmart.
+                        А пока познакомьтесь
+                        с <br class="br-m">
+                        онлайн-школой Skysmart.
                     </p>
                 </div>
             </section>
@@ -40,7 +42,7 @@
                             <!-- Less card 1 -->
                             <div class="less-card">
                                 <div class="less-title">
-                                    <p>Английский язык</p>
+                                    <p>Английский<br>язык</p>
                                     <img id="uk-img" src="../images/uk.png" alt="#">
                                 </div>
                                 <div class="less-yeras">
@@ -60,7 +62,7 @@
                                     От 4 до 18 лет
                                 </div>
                                 <div class="less-text">
-                                    Объясним любую формулу, поможем<br>с домашкой
+                                    Объясним любую формулу, поможем<br class="br-d">с домашкой
                                 </div>
                             </div>
                             <!-- Less card  3-->
@@ -73,7 +75,7 @@
                                     С 5 класса
                                 </div>
                                 <div class="less-text">
-                                    Научим писать<br>и говорить без ошибок, объясним все правила на наглядных примерах
+                                    Научим писать<br class="br-d">и говорить без ошибок, объясним все правила на наглядных примерах
                                 </div>
                             </div>
                         </div>
@@ -88,7 +90,7 @@
                                     С 7 класса
                                 </div>
                                 <div class="less-text">
-                                    Расскажем об устройстве мира<br>и законах физики
+                                    Расскажем об устройстве<br class="br-m"> мира<br class="br-d"> и законах физики
                                 </div>
                             </div>
                             <!-- Less card 2 -->
@@ -114,7 +116,7 @@
                                     С 1 до 7 класса
                                 </div>
                                 <div class="less-text">
-                                    Покажем правила, разовьем память<br>и научим принимать взвешенные решения
+                                    Покажем правила, разовьем память<br class="br-d">и научим принимать взвешенные решения
                                 </div>
                             </div>
                         </div>
@@ -129,7 +131,7 @@
                                 <div class="less-tags__list-item">
                                     <p>→</p>
                                     <p>
-                                        Определим уровень подготовки<br>
+                                        Определим уровень подготовки<br class="br-d">
                                         по предмету, обсудим цели ученика<br>
                                         и желаемый балл
                                     </p>
@@ -137,19 +139,19 @@
                                 <div class="less-tags__list-item">
                                     <p>→</p>
                                     <p>
-                                        Отработаем на практике задания из каждого раздела ЕГЭ и ОГЭ
+                                        Отработаем на практике задания из каждого<br class="br-m"> раздела ЕГЭ и ОГЭ
                                     </p>
                                 </div>
                                 <div class="less-tags__list-item">
                                     <p>→</p>
                                     <p>
-                                        Закроем пробелы в знаниях,<br> разберем все сложные темы
+                                        Закроем пробелы в<br class="br-m"> знаниях,<br class="br-d"> разберем все сложные темы
                                     </p>
                                 </div>
                                 <div class="less-tags__list-item">
                                     <p>→</p>
                                     <p>
-                                        Расскажем, как побороть волнение<br>и страх перед экзаменом
+                                        Расскажем, как побороть волнение<br class="br-d">и страх перед экзаменом
                                     </p>
                                 </div>
                             </div>
@@ -197,7 +199,31 @@
                         </div>
                     </div>
                 </div>
+            </section>
 
+            <section class="free">
+                <div class="free-left">
+                    <h2 class="free-title">Попробуйте бесплатно<br>на первом уроке</h2>
+                    <picture>
+                        <source srcset="../images/pose_2.png" media="(max-width: 719px)">
+                        <img id="pose-img" src="../images/pose.png" alt="#">
+                    </picture>
+                </div>
+                <div class="free-right">
+                    <form class="free__form" action="#">
+                        <input class="free__form-inp" type="text" placeholder="Имя родителя" name="par-name" id="par-name-inp">
+                        <input class="free__form-inp" type="text" placeholder="Телефон родителя" name="par-phone" id="par-phone-inp">
+                        <input class="free__form-inp" type="text" placeholder="Почта родителя" name="par-email" id="par-email-inp">
+                        <input class="free__form-inp" type="text" placeholder="Имя ребенка" name="ch-name" id="ch-name-inp">
+                        <input class="free__form-inp" type="text" placeholder="Возраст ребенка" name="ch-age" id="ch-age-inp">
+                        <button class="free__form-sub" type="submit">Оставить заявку</button>
+                        <div class="free__form-terms">
+                            Нажимая на кнопку, вы принимаете условия
+                            <a class="free__form-link" href="#">пользовательского соглашения</a>
+                        </div>
+                        <p class="free__form-err"></p>
+                    </form>
+                </div>
 
             </section>
 

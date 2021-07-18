@@ -6,6 +6,10 @@
 #plus-img {
   top: -4px;
   right: -18px;
+
+  @include responsive(mobile) {
+    right: 4px;
+  }
 }
 
 #pen-img {
@@ -32,4 +36,10 @@
   position: absolute;
   top: -96px;
   left: 22px;
+
+  @include responsive(mobile) {
+    width: 207px;
+    left: 11px;
+    top: -70px;
+  }
 }

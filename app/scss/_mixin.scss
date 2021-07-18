@@ -23,7 +23,11 @@
     @media (max-width: 719px) {
       @content;
     }
-  }   
+  }  @else if $range {
+    @media (max-width: $range) {
+      @content;
+    }
+  }
 }
 
 @mixin imgToCeneter($width, $height) {

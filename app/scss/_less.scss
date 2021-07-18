@@ -2,6 +2,10 @@
   width: 100%;
   margin-top: 86px;
 
+  @include responsive(mobile) {
+    margin-top: 88px;
+  }
+
   &-title {
     width: 100%;
     max-width: 1160px;
@@ -10,6 +14,13 @@
     line-height: 110%;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #631389;
+
+    @include responsive(mobile) {
+      width: 98%;
+      font-size: 32px;
+      line-height: 100%;
+      letter-spacing: -1.90204px;
+    }
   }
 
   &-card {
@@ -19,6 +30,13 @@
     padding: 24px 24px 32px 24px;
     border-radius: 10px;
     background-color: #fff;
+
+    @include responsive(mobile) {
+      width: 100%;
+      //max-width: 260px;
+      margin-top: 16px;
+      padding-bottom: 24px;
+    }
   }
 
   &-card:first-child {
@@ -28,6 +46,10 @@
   &-title {
     width: 100%;
     position: relative;
+
+    @include responsive(mobile) {
+      width: 98%;
+    }
 
     p {
       font-size: 32px;
@@ -56,24 +78,47 @@
     line-height: 130%;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #04121B;
+
+    @include responsive(mobile) {
+      width: 102%;
+      font-size: 16px;
+      line-height: 132%;
+    }
   }
 }
 
 .less__inner {
   margin-top: 48px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+
+  @include responsive(mobile) {
+    margin-top: 32px;
+    flex-direction: column;
+  }
 
   &-left {
     width: 560px;
     display: flex;
     justify-content: space-between;
+
+    @include responsive(mobile) {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   &-left_l {
     display: flex;
     flex-direction: column;
+  }
+
+  &-left_r {
+    @include responsive(mobile) {
+      margin-top: 16px;
+    }
   }
 }
 
@@ -89,11 +134,24 @@
   border-radius: 16px;
   position: relative;
 
+  @include responsive(mobile) {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 440px;
+    padding: 64px 24px 40px 24px;
+  }
+
   &__title {
     font-size: 48px;
     line-height: 110%;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #04121B;
+
+    @include responsive(mobile) {
+      font-size: 32px;
+      line-height: 110%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
   }
 
   &__list {
@@ -102,12 +160,21 @@
     line-height: 130%;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #04121B;
+
+    @include responsive(mobile) {
+      margin-top: 16px;
+      font-size: 16px;
+    }
   }
 
   &__list-item {
     margin-top: 24px;
     display: flex;
     align-items: flex-start;
+
+    @include responsive(mobile) {
+      margin-top: 19px;
+    }
 
     p:first-child {
       margin-right: 8px;
