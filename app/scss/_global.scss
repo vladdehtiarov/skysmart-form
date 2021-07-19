@@ -43,10 +43,18 @@ p {
 
 body {
     background-image: url('../images/bg_form.png');
+    
+    @include responsive(mobile) {
+        background-image: url('../images/bg_form_mob.png');
+    }
 }
 
 #next-step {
     background-image: url('../images/bg_next-step.png');
+    
+    @include responsive(mobile) {
+        background-image: url('../images/bg_next-step_mob.png');
+    }
 }
 
 h1.title {

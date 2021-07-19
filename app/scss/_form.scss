@@ -72,8 +72,13 @@
     }
 }
 
+.noValid {
+    border: 1px solid red!important;
+}
+
 
 @import "select";
 @import "textarea";
 @import "uppload";
 @import "checkbox";
+

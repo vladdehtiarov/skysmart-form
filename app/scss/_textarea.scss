@@ -16,7 +16,8 @@
         left: 16px;
         z-index: 1000;
         color: rgba(0, 0, 0, 0.24);
-
+        background-color: #fff;
+        
         @include responsive(mobile) {
             font-size: 16px;
         }

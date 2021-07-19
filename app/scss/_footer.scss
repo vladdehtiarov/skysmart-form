@@ -61,8 +61,10 @@
 
 #next-step {
     .footer {
+        margin-top: 250px;
+
         @include responsive(mobile) {
-            margin-top: 56px;
+            margin-top: 326px;
         }
     }
 }

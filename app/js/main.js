@@ -1,11 +1,26 @@
 // dropdown
 
-const selectDeff = document.querySelector('.select-deff');
-const select = selectDeff.parentNode;
+const selectDeff = document.getElementById('chYears');
+const selectOption = document.querySelectorAll('.select-option');
+
+selectDeff.addEventListener('click', () => {
+    selectDeff.classList.toggle('active');
+    selectOption.forEach(i => {
+        i.classList.toggle('active');
+    });
+});
+
+selectOption[0].addEventListener('click', () => {
+    selectDeff.value = '7-12 лет';
+});
+
+selectOption[1].addEventListener('click', () => {
+    selectDeff.value = '13-17 лет';
+});
 
 
 selectDeff.addEventListener('click', () => {
-    select.classList.toggle('select-active');
+    selectDeff.classList.toggle('select-active');
 });
 
 // text area
@@ -63,14 +78,31 @@ const upStoryWrapp =document.getElementById('uppStoryWrapp');
  });
 
 
-// Go to nex page
+// Go to nex page and form validate
 
 const sendForm = document.getElementById('send-form');
+const inputs = document.querySelectorAll('.valid');
+
 
 sendForm.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.location.href = "next.html";
+    inputs.forEach(i => {
+        if (i.value) {
+            e.preventDefault();
+            document.location.href = "next.html";
+        } else {
+            if (!i.value) {
+                i.classList.add('noValid');
+
+                setTimeout(noValid, 2000);
+
+                function noValid() {
+                    i.classList.remove('noValid');
+                }
+            }
+        }
+    });
 });
+
 
 
 
