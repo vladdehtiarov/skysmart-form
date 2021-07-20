@@ -35,15 +35,15 @@
                 </section>
                 <section class="content__right">
                     <form action="#" class="form">
-                        <input required data-validate-field="chName" type="text" name="fullName" id="fullName" class="valid input-text input" placeholder="Имя и фамилия участника">
+                        <input required data-validate-field="fullName" type="text" name="fullName" id="fullName" class="valid input-text input" placeholder="Имя и фамилия участника">
                         <!-- Select must bee here -->
-                        <input required type="text" name="ch-years" id="chYears" class="valid input-text input ch-years" placeholder="Возраст учасника">
+                        <input required data-validate-field="chYears" type="text" name="chYears" id="chYears" class="valid input-text input ch-years" placeholder="Возраст учасника">
 <!--                            <img id="drop-img" src="images/dropdown.png" alt="#">-->
                         <div class="select-option" id="opt-1" value="7">7-12 лет</div>
                         <div class="select-option" id="opt-2" value="13">13-17 лет</div>
                         <!-- Select on top -->
-                        <input required data-validate-field="parName" type="text" name="parentName" id="parentName" class="valid input-text input" placeholder="Имя родителя">
-                        <input required data-validate-field="parMail" type="text" name="parentMail" id="parentMail" class="valid input-text input" placeholder="Почта родителя">
+                        <input required data-validate-field="name" type="text" name="parentName" id="parentName" class="valid input-text input" placeholder="Имя родителя">
+                        <input required data-validate-field="email" type="text" name="parentMail" id="parentMail" class="valid input-text input" placeholder="Почта родителя">
                         <div class="textarea">
                             <div class="char" id="superPowerChar">0/200</div>
                             <textarea required data-validate-field="superPower" maxlength="200" name="superPower" id="superPower" class="valid input text-area" cols="30" rows="10" placeholder="Вопрос для участника: как ты думаешь, какая у тебя суперсила? Что у тебя хорошо получается в школе, в дополнительных занятиях или в общении с друзьями и семьей?"></textarea>
@@ -72,14 +72,14 @@
                             <div class="text-wrapp" id=uppImageWrapp>
                                 <div class="text-wrapp-inner">
                                     <div class="textara-char" id="uppImg">
-                                        <label for="file">
+                                        <label for="file" id="upFilePicture">
                                             <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2C7.34315 2 6 3.34315 6 5V13C6 13.5523 6.44772 14 7 14C7.55228 14 8 13.5523 8 13V6H10V13C10 14.6569 8.65685 16 7 16C5.34315 16 4 14.6569 4 13V5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5V13C14 16.866 10.866 20 7 20C3.13401 20 0 16.866 0 13V6H2V13C2 15.7614 4.23858 18 7 18C9.76142 18 12 15.7614 12 13V5C12 3.34315 10.6569 2 9 2Z" fill="black" fill-opacity="0.24"/>
                                             </svg>
                                         </label>
                                         <input id="file" type="file" class="valid inp-file" accept="image/*">
                                     </div>
-                                    <textarea required data-validate-field="uppImage" name="uppImage" id="uppImageArea" class="valid input texptaera-upp" cols="30" rows="10" placeholder="Прикрепи файл в формате .jpeg"></textarea>
+                                    <textarea disabled required data-validate-field="uppImage" name="uppImage" id="uppImageArea" class="valid input texptaera-upp" cols="30" rows="10" placeholder="Прикрепи файл в формате .jpeg"></textarea>
                                 </div>
                             </div>
 

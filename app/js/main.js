@@ -10,12 +10,17 @@ selectDeff.addEventListener('click', () => {
     });
 });
 
-selectOption[0].addEventListener('click', () => {
+selectOption[0].addEventListener('click', function() {
     selectDeff.value = '7-12 лет';
+    this.classList.toggle('active');
+    selectOption[1].classList.toggle('active');
+
 });
 
-selectOption[1].addEventListener('click', () => {
+selectOption[1].addEventListener('click', function() {
     selectDeff.value = '13-17 лет';
+    this.classList.toggle('active');
+    selectOption[0].classList.toggle('active');
 });
 
 
@@ -80,30 +85,43 @@ const upStoryWrapp =document.getElementById('uppStoryWrapp');
 
 // Go to nex page and form validate
 
-const sendForm = document.getElementById('send-form');
-const inputs = document.querySelectorAll('.valid');
-
-
-sendForm.addEventListener('click', (e) => {
-    inputs.forEach(i => {
-        if (i.value) {
-            e.preventDefault();
+let validateForm = function (element, options) {
+    new window.JustValidate(element, {
+        rules: options,
+        // Start if valid
+        submitHandler: function (form) {
+            //Go to page next if valid
             document.location.href = "next.html";
-        } else {
-            if (!i.value) {
-                i.classList.add('noValid');
-
-                setTimeout(noValid, 2000);
-
-                function noValid() {
-                    i.classList.remove('noValid');
-                }
-            }
         }
     });
-});
+};
+
+validateForm('.form',
+    {
+                email: {required:true, email: true},
+                name: {required: true},
+                fullName: {required: true},
+                chYears: {required: true},
+                superPower: {required: true},
+                whatStopping: {required: true},
+                favorLess: {required: true},
+                uppVideo: {required: true},
+                uppImage: {required: true},
+                uppStoryArea: {required: true},
+                linkPost: {required: true},
+                persomalData: {required: true},
+                rules: {required: true}
+            });
 
 
+const upFile = document.getElementById('file');
+const upFileText = document.getElementById('uppImageArea');
+
+upFile.onchange = function() {
+    let fileName = this.files.item(0).name;
+    // console.dir(this.files.item(0).name);
+    upFileText.value = fileName;
+};
 
 
 
