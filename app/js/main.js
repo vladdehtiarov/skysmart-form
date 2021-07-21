@@ -14,13 +14,16 @@ selectOption[0].addEventListener('click', function() {
     selectDeff.value = '7-12 лет';
     this.classList.toggle('active');
     selectOption[1].classList.toggle('active');
+    selectDeff.classList.toggle('active');
 
 });
 
 selectOption[1].addEventListener('click', function() {
     selectDeff.value = '13-17 лет';
     this.classList.toggle('active');
-    selectOption[0].classList.toggle('active');
+    selectOption[0].classList.toggle('active')
+    selectDeff.classList.toggle('active');
+
 });
 
 
