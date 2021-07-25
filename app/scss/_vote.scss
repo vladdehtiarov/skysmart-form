@@ -1,0 +1,12 @@
+.vote {
+  background-image: url('../images/bg_vote.png');
+
+  .footer {
+    margin-top: 178px;
+  }
+}
+
+@import "vote-info";
+@import "vote-filter";
+@import "type";
+@import "pagination";

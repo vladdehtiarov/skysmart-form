@@ -1,0 +1,72 @@
+.vote-filter {
+  margin-top: 152px;
+}
+
+.filter-for-year {
+  width: 282px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.05px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  text-align: center;
+  color: rgba(43, 23, 7, 0.24);
+
+  &__btn {
+    width: 138px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(4, 18, 27, 0.04);
+    cursor: pointer;
+  }
+
+  &__btn:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+
+  &__btn:last-child {
+    width: 144px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .filter-for-year__btn-active {
+    color: #FFFFFF;
+    background: #FB8023;
+  }
+}
+
+.filter-for-type {
+  width: 1160px;
+  margin-top: 52px;
+  display: flex;
+  justify-content: space-between;
+
+  &__btn {
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: -1.90204px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+
+    .underline {
+      width: 360px;
+      height: 4px;
+      margin-top: 9px;
+      background: rgba(0, 0, 0, 0.16)
+    }
+  }
+
+  &__btn-active {
+    color: #FB8023;
+    
+    .underline {
+      background: #FB8023;
+    }
+  }
+
+
+}

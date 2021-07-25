@@ -1,0 +1,47 @@
+.vote-info {
+  width: 100%;
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+
+  &__title-wrapp {
+    position: relative;
+
+  }
+
+  &__title {
+    width: 600px;
+    font-size: 104px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2.48093px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+  }
+
+  #star-img {
+    position: absolute;
+    top: -23px;
+    left: -53px;
+  }
+
+  &__subtitle-wrapp {
+    position: relative;
+  }
+
+  &__subtitle {
+    width: 494px;
+    margin-top: 37px;
+    margin-left: 58px;
+    font-size: 24px;
+    line-height: 140%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+  }
+
+  #project-img {
+    position: absolute;
+    left: 278px;
+    bottom: -42px;
+  }
+}
